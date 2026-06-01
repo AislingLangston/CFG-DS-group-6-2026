@@ -9,11 +9,11 @@
 **Project Title:** Deprivation and School Performance in England (2019–2025)
 
 **Project Question:**
-How does regional deprivation affect Key Stage 4 school performance in England, and has the attainment gap between the most and least deprived Local Authorities widened or narrowed between 2019 and 2025?
+How does regional deprivation affect Key Stage 4 school performance in England, and has the attainment gap between the most and least deprived Local Authorities widened or narrowed between 2019 (pre-Covid) and 2025 (post Covid)?
 
 ### Real-World Problem
 
-Educational inequality is one of the most persistent challenges in England. Children growing up in more deprived areas consistently achieve lower grades than their peers in more affluent areas — a pattern known as the "attainment gap". Understanding where this gap is largest, which aspects of deprivation drive it, and whether it is changing over time is essential for policymakers, schools, and charities working to level the playing field. The COVID-19 pandemic may have further widened these inequalities, making this period particularly important to study.
+Educational inequality is one of the most persistent challenges in England. Children growing up in more deprived areas consistently achieve lower grades than their peers in more affluent areas — a pattern known as the "attainment gap". Understanding where this gap is largest, which aspects of deprivation drive it most, and whether it is changing over time is essential for policymakers, schools, and charities working to level the playing field. The COVID-19 pandemic may have further widened these inequalities, making this period particularly important to study.
 
 ### Core Research Questions
 
@@ -26,6 +26,12 @@ Educational inequality is one of the most persistent challenges in England. Chil
 4. **The Gender Gap and Deprivation:** How does the performance gap between boys and girls change across different levels of regional deprivation?
 
 5. **Language Background and Deprivation:** How does the performance of pupils with English as an Additional Language (EAL) compare to first-language English speakers across different deprivation levels?
+
+#### Machine Learning Questions
+
+6. Can You Predict a School's Progress 8 Band from Non-Academic Data Alone?
+
+7. What do "over-performing against deprivation" schools have in common — size, type, region, absence rates?
 
 <div style="page-break-after: always;"></div>
 
@@ -88,7 +94,7 @@ Our target audience has a mixed level of data literacy. The report will be writt
 
 ### How We Will Work Together
 
-We plan to divide the project into workstreams broadly aligned to our five research questions, with each member taking ownership of at least one area. We will also share responsibility for common tasks such as data cleaning and the final report. The specific allocation of workstreams and responsibilities will be agreed together as a team.
+We plan to divide the project into workstreams broadly aligned to our research questions, with each member taking ownership of at least one area. We will also share responsibility for common tasks such as data cleaning and the final report. The specific allocation of workstreams and responsibilities will be agreed together as a team.
 
 ### Workstreams
 
