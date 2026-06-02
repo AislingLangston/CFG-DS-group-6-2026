@@ -1,0 +1,54 @@
+import numpy as np
+import pandas as pd
+
+performance_data = pd.read_csv('/Users/aislinglangston/Desktop/CFG_group_project/202425_performance_tables_schools_final.csv')
+
+iod_data = pd.read_csv('/Users/aislinglangston/Desktop/CFG_group_project/File_7_-_All_IoD2019_Scores__Ranks__Deciles_and_Population_Denominators_3.csv')
+
+# Filtering performance rows (several per school, so trimming down)
+performance_total = performance_data[
+    (performance_data['breakdown_topic'] == 'Total') &
+    (performance_data['sex'] == 'Total') &
+    (performance_data['disadvantage_status'] == 'Total') &
+    (performance_data['first_language'] == 'Total')
+].copy()
+
+# For Q4 (gender gap) - use sex breakdown
+perf_gender = performance_data[
+    (performance_data['breakdown_topic'] == 'Sex') &
+    (performance_data['disadvantage_status'] == 'Total') &
+    (performance_data['first_language'] == 'Total')
+].copy()
+
+# For Q5 (EAL) - use first language breakdown
+perf_eal = performance_data[
+    (performance_data['breakdown_topic'] == 'First language')
+].copy()
+
+print("---NEW PERFORMANCE DATA STRUCTURE ------")
+print(performance_total.head(10))
+print(performance_total.info())
+print(performance_total.columns)
+
+
+iod_la = iod_data.groupby(
+    ['Local Authority District code (2019)', 'Local Authority District name (2019)']
+).agg(
+    imd_score          = ('Index of Multiple Deprivation (IMD) Score', 'mean'),
+    income_score       = ('Income Score (rate)', 'mean'),
+    employment_score   = ('Employment Score (rate)', 'mean'),
+    health_score       = ('Health Deprivation and Disability Score', 'mean'),
+    crime_score        = ('Crime Score', 'mean'),
+    barriers_score     = ('Barriers to Housing and Services Score', 'mean'),
+    living_env_score   = ('Living Environment Score', 'mean'),
+    idaci_score        = ('Income Deprivation Affecting Children Index (IDACI) Score (rate)', 'mean'),
+    children_subdomain = ('Children and Young People Sub-domain Score', 'mean'),
+).reset_index()
+
+iod_la.rename(columns={
+    'Local Authority District code (2019)': 'la_code'
+}, inplace=True)
+
+print("---NEW DEPRIVATION DATA STRUCTURE ------")
+print(iod_la.head(10))
+print(iod_la.info())
