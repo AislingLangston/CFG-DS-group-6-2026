@@ -83,7 +83,7 @@ Our target audience has a mixed level of data literacy. The report will be writt
 
 | Issue | Plan |
 |---|---|
-| **Suppressed data** — The DfE dataset uses `'z'` for suppressed values | Identify and exclude suppressed values before analysis; note affected years clearly |
+| **Suppressed/missing data** — The DfE dataset uses `'z'` for not applicable values and `'c'` for suppressed for small numbers | Identify and exclude suppressed values before analysis; note affected years clearly, as well as exploring factors that may contribute towards missingness (e.g. type of school, region etc.) |
 | **Geographic mismatch** — IMD is at LSOA level; KS4 data is at Local Authority level | Aggregate IMD scores to Local Authority level by averaging across LSOAs within each LA |
 | **COVID-19 disruption (2019/20 and 2020/21)** — No formal exams were held; results rely on teacher-assessed grades | Flag these years clearly in all charts and interpret with caution |
 | **England only** — The IMD covers England only; devolved nations use different indices | Scope the analysis explicitly to England throughout |
