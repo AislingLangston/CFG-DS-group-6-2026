@@ -127,6 +127,11 @@ We plan to divide the project into workstreams broadly aligned to our research q
 
 *To be agreed by the team — likely using GitHub for version control, with a shared repository and an agreed branching strategy.*
 
+#### Branching Strategy
+- Regular git pull and/or git fetch operations 
+- Branches for each research question
+- Secondary person to overview pull requests before merging to main
+
 ### Expected Project Timeline
 
 *To be agreed by the team based on availability and submission deadline.*
