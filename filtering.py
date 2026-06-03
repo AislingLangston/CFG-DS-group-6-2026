@@ -112,7 +112,7 @@ print(iod_la.head(10))
 print(iod_la.info())
 
 
-# MISSING DATA
+# MISSING DATA - PERFORMANCE
 print("--- MISSING DATA INITIAL ANALYSIS---")
 # Per column counts
 c_by_col = (performance_total == 'c').sum()
@@ -128,7 +128,7 @@ performance_total_suppression_summary = performance_total_suppression_summary[
     (performance_total_suppression_summary['z_count'] > 0)
 ].sort_values('c_count', ascending=False)
 
-print(f"Performance total supression summary: \n {performance_total_suppression_summary}")
+print(f"\nPerformance total supression summary: \n {performance_total_suppression_summary}")
 
 
 # Gender 
@@ -146,7 +146,7 @@ perf_gender_suppression_summary = perf_gender_suppression_summary[
     (perf_gender_suppression_summary['z_count'] > 0)
 ].sort_values('c_count', ascending=False)
 
-print(f"Performance gender supression summary: \n {perf_gender_suppression_summary}")
+print(f"\nPerformance gender supression summary: \n {perf_gender_suppression_summary}")
 
 # EAL
 # Per column counts
@@ -163,4 +163,7 @@ perf_eal_suppression_summary = perf_eal_suppression_summary[
     (perf_eal_suppression_summary['z_count'] > 0)
 ].sort_values('c_count', ascending=False)
 
-print(f"Performance EAL supression summary: \n {perf_eal_suppression_summary}")
+print(f"\nPerformance EAL supression summary: \n {perf_eal_suppression_summary}")
+
+# MISSING DATA - IOD
+print(f"\nIOD Missing data summary: {iod_data.isnull().sum().sum()} total missing values")
