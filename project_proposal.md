@@ -115,7 +115,7 @@ We plan to divide the project into workstreams broadly aligned to our research q
 | Python programming (general) | |S| | | | | |
 | SQL (queries, databases, joins, aggregations) | |S| | | | | |
 | Data cleaning and preprocessing with Pandas | |S| | | | | |
-| Exploratory data analysis (EDA) | | |S| | | | |
+| Exploratory data analysis (EDA) | |S| | | | | |
 | Statistical analysis (correlation, distributions) | |S| | | | | |
 | Data visualisation (Matplotlib / Seaborn) | |~| | | | | |
 | Working with APIs and external datasets | |S| | | | | |
