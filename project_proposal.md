@@ -110,18 +110,18 @@ We plan to divide the project into workstreams broadly aligned to our research q
 ### Team Strengths and Areas for Development
 
 *To be discussed and completed by each team member.*
-| Skill / Area | Each member to mark: Strength (S) or Area for Development (D) |
-|---|---|
-| Python programming (general) | |
-| SQL (queries, databases, joins, aggregations) | |
-| Data cleaning and preprocessing with Pandas | |
-| Exploratory data analysis (EDA) | |
-| Statistical analysis (correlation, distributions) | |
-| Data visualisation (Matplotlib / Seaborn) | |
-| Working with APIs and external datasets | |
-| Version control with Git and GitHub | |
-| Report writing and data storytelling | |
-| Presenting findings to a non-technical audience | |
+| Skill / Area | Each member to mark: Strength (S) or Area for Development (D) | Aisling | Kara | Olesya | Olivia | Raquel | Sotiria
+|---|---|---|---|---|---|---|---|
+| Python programming (general) | |S| | | | | |
+| SQL (queries, databases, joins, aggregations) | |S| | | | | |
+| Data cleaning and preprocessing with Pandas | |S| | | | | |
+| Exploratory data analysis (EDA) | | |S| | | | |
+| Statistical analysis (correlation, distributions) | |S| | | | | |
+| Data visualisation (Matplotlib / Seaborn) | |~| | | | | |
+| Working with APIs and external datasets | |S| | | | | |
+| Version control with Git and GitHub | |S| | | | | |
+| Report writing and data storytelling | |~| | | | | |
+| Presenting findings to a non-technical audience | |D| | | | | |
 
 ### Code Management
 
@@ -129,7 +129,7 @@ We plan to divide the project into workstreams broadly aligned to our research q
 
 #### Branching Strategy
 - Regular git pull and/or git fetch operations 
-- Branches for each research question
+- Branches for each research question?
 - Secondary person to overview pull requests before merging to main
 
 ### Expected Project Timeline
