@@ -52,25 +52,36 @@ performance_data = pd.read_csv('/Users/aislinglangston/Desktop/CFG_group_project
 
 iod_data = pd.read_csv('/Users/aislinglangston/Desktop/CFG_group_project/File_7_-_All_IoD2019_Scores__Ranks__Deciles_and_Population_Denominators_3.csv')
 
-# Filtering performance rows (several per school, so trimming down)
+# Filtering performance rows (several per school, so trimming down) & columns
 performance_total = performance_data[
     (performance_data['breakdown_topic'] == 'Total') &
     (performance_data['sex'] == 'Total') &
     (performance_data['disadvantage_status'] == 'Total') &
     (performance_data['first_language'] == 'Total')
-].copy()
+][['school_urn', 'school_name', 'la_name', 'new_la_code',
+   'establishment_type_group', 'pupil_count',
+   'attainment8_average', 'progress8_average', 
+   'ebacc_aps_average']].copy()
+
+
 
 # For Q4 (gender gap) - use sex breakdown
 perf_gender = performance_data[
     (performance_data['breakdown_topic'] == 'Sex') &
     (performance_data['disadvantage_status'] == 'Total') &
     (performance_data['first_language'] == 'Total')
-].copy()
+][['school_urn', 'school_name', 'la_name', 'new_la_code',
+   'establishment_type_group', 'pupil_count',
+   'attainment8_average', 'progress8_average', 
+   'ebacc_aps_average']].copy()
 
 # For Q5 (EAL) - use first language breakdown
 perf_eal = performance_data[
     (performance_data['breakdown_topic'] == 'First language')
-].copy()
+][['school_urn', 'school_name', 'la_name', 'new_la_code',
+   'establishment_type_group', 'pupil_count',
+   'attainment8_average', 'progress8_average', 
+   'ebacc_aps_average']].copy()
 
 print("---NEW PERFORMANCE DATA STRUCTURE ------")
 print(performance_total.head(10))
@@ -99,3 +110,57 @@ iod_la.rename(columns={
 print("---NEW DEPRIVATION DATA STRUCTURE ------")
 print(iod_la.head(10))
 print(iod_la.info())
+
+
+# MISSING DATA
+print("--- MISSING DATA INITIAL ANALYSIS---")
+# Per column counts
+c_by_col = (performance_total == 'c').sum()
+z_by_col = (performance_total == 'z').sum()
+
+# Show only columns that actually have them
+performance_total_suppression_summary = pd.DataFrame({
+    'c_count': c_by_col,
+    'z_count': z_by_col
+})
+performance_total_suppression_summary = performance_total_suppression_summary[
+    (performance_total_suppression_summary['c_count'] > 0) | 
+    (performance_total_suppression_summary['z_count'] > 0)
+].sort_values('c_count', ascending=False)
+
+print(f"Performance total supression summary: \n {performance_total_suppression_summary}")
+
+
+# Gender 
+# Per column counts
+c_by_col = (perf_gender == 'c').sum()
+z_by_col = (perf_gender == 'z').sum()
+
+# Show only columns that actually have them
+perf_gender_suppression_summary = pd.DataFrame({
+    'c_count': c_by_col,
+    'z_count': z_by_col
+})
+perf_gender_suppression_summary = perf_gender_suppression_summary[
+    (perf_gender_suppression_summary['c_count'] > 0) | 
+    (perf_gender_suppression_summary['z_count'] > 0)
+].sort_values('c_count', ascending=False)
+
+print(f"Performance gender supression summary: \n {perf_gender_suppression_summary}")
+
+# EAL
+# Per column counts
+c_by_col = (perf_eal == 'c').sum()
+z_by_col = (perf_eal == 'z').sum()
+
+# Show only columns that actually have them
+perf_eal_suppression_summary = pd.DataFrame({
+    'c_count': c_by_col,
+    'z_count': z_by_col
+})
+perf_eal_suppression_summary = perf_eal_suppression_summary[
+    (perf_eal_suppression_summary['c_count'] > 0) | 
+    (perf_eal_suppression_summary['z_count'] > 0)
+].sort_values('c_count', ascending=False)
+
+print(f"Performance EAL supression summary: \n {perf_eal_suppression_summary}")
