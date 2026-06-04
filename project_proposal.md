@@ -112,16 +112,16 @@ We plan to divide the project into workstreams broadly aligned to our research q
 *To be discussed and completed by each team member.*
 | Skill / Area | Each member to mark: Strength (S) or Area for Development (D) | Aisling | Kara | Olesya | Olivia | Raquel | Sotiria
 |---|---|---|---|---|---|---|---|
-| Python programming (general) | |S|D|S|D|S| |
-| SQL (queries, databases, joins, aggregations) | |S|S|S|S|S| |
-| Data cleaning and preprocessing with Pandas | |S|S|~|S|~| |
-| Exploratory data analysis (EDA) | |S|S|S|S|S| |
-| Statistical analysis (correlation, distributions) | |S|~|D|S|S| |
-| Data visualisation (Matplotlib / Seaborn) | |~|~|S|~|S| |
-| Working with APIs and external datasets | |S|D|D|S|~| |
-| Version control with Git and GitHub | |S|S|D|S|~| |
-| Report writing and data storytelling | |~|~|D|S|~| |
-| Presenting findings to a non-technical audience | |D|S|D|S|S| |
+| Python programming (general) | |S|D|S|D|S|S|
+| SQL (queries, databases, joins, aggregations) | |S|S|S|S|S|S|
+| Data cleaning and preprocessing with Pandas | |S|S|~|S|~|D|
+| Exploratory data analysis (EDA) | |S|S|S|S|S|S|
+| Statistical analysis (correlation, distributions) | |S|~|D|S|S|D|
+| Data visualisation (Matplotlib / Seaborn) | |~|~|S|~|S|~|
+| Working with APIs and external datasets | |S|D|D|S|~|D|
+| Version control with Git and GitHub | |S|S|D|S|~|S|
+| Report writing and data storytelling | |~|~|D|S|~|S|
+| Presenting findings to a non-technical audience | |D|S|D|S|S|D|
 
 ### Code Management
 
