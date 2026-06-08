@@ -83,7 +83,7 @@ Our target audience has a mixed level of data literacy. The report will be writt
 
 | Issue | Plan |
 |---|---|
-| **Suppressed data** — The DfE dataset uses `'z'` for suppressed values | Identify and exclude suppressed values before analysis; note affected years clearly |
+| **Suppressed/missing data** — The DfE dataset uses `'z'` for not applicable values and `'c'` for suppressed for small numbers | Identify and exclude suppressed values before analysis; note affected years clearly, as well as exploring factors that may contribute towards missingness (e.g. type of school, region etc.) |
 | **Geographic mismatch** — IMD is at LSOA level; KS4 data is at Local Authority level | Aggregate IMD scores to Local Authority level by averaging across LSOAs within each LA |
 | **COVID-19 disruption (2019/20 and 2020/21)** — No formal exams were held; results rely on teacher-assessed grades | Flag these years clearly in all charts and interpret with caution |
 | **England only** — The IMD covers England only; devolved nations use different indices | Scope the analysis explicitly to England throughout |
@@ -110,22 +110,27 @@ We plan to divide the project into workstreams broadly aligned to our research q
 ### Team Strengths and Areas for Development
 
 *To be discussed and completed by each team member.*
-| Skill / Area | Each member to mark: Strength (S) or Area for Development (D) |
-|---|---|
-| Python programming (general) | |
-| SQL (queries, databases, joins, aggregations) | |
-| Data cleaning and preprocessing with Pandas | |
-| Exploratory data analysis (EDA) | |
-| Statistical analysis (correlation, distributions) | |
-| Data visualisation (Matplotlib / Seaborn) | |
-| Working with APIs and external datasets | |
-| Version control with Git and GitHub | |
-| Report writing and data storytelling | |
-| Presenting findings to a non-technical audience | |
+| Skill / Area | Each member to mark: Strength (S) or Area for Development (D) | Aisling | Kara | Olesya | Olivia | Raquel | Sotiria
+|---|---|---|---|---|---|---|---|
+| Python programming (general) | |S|D|S|D|S|S|
+| SQL (queries, databases, joins, aggregations) | |S|S|S|S|S|S|
+| Data cleaning and preprocessing with Pandas | |S|S|~|S|~|~|
+| Exploratory data analysis (EDA) | |S|S|S|S|S|S|
+| Statistical analysis (correlation, distributions) | |S|~|D|S|S|D|
+| Data visualisation (Matplotlib / Seaborn) | |~|~|S|~|S|~|
+| Working with APIs and external datasets | |S|D|D|S|~|D|
+| Version control with Git and GitHub | |S|S|D|S|~|S|
+| Report writing and data storytelling | |~|~|D|S|~|S|
+| Presenting findings to a non-technical audience | |D|S|D|S|S|D|
 
 ### Code Management
 
 *To be agreed by the team — likely using GitHub for version control, with a shared repository and an agreed branching strategy.*
+
+#### Branching Strategy
+- Regular git pull and/or git fetch operations 
+- Branches for each research question?
+- Secondary person to overview pull requests before merging to main
 
 ### Expected Project Timeline
 
