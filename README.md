@@ -43,4 +43,4 @@ pip install -r requirements.txt
 ```
 
 ### Running the Jupyter Notebook
-Open `.ipynb` directly inside VS Code or your preferred IDE and run it cell by cell to step through the full data science lifecycle (from data sourcing and cleaning to analysis, modeling, and conclusions).
+Open `school_performance.ipynb` directly inside VS Code or your preferred IDE and run it cell by cell to step through the full data science lifecycle (from data sourcing and cleaning to analysis, modeling, and conclusions).
