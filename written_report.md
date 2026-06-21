@@ -1,21 +1,22 @@
 # Deprivation and School Performance in England (2019–2025)
 ## Written Report — CFG Data Science Group Project
 
-**Group 6 Members:** Aisling Langston, Kara, Olesya, Olivia, Raquel, and Sotiria  
+**Group 6 Members:** Aisling, Kara, Olesya, Olivia, Raquel, and Sotiria  
 **Repository:** https://github.com/AislingLangston/CFG-DS-group-6-2026  
 **Date:** June 2026  
 
 ---
 
 ## 1. Introduction & Background
-This project analyzes the relationship between regional deprivation—using the **2019 Indices of Multiple Deprivation (IMD)**—and **Key Stage 4 (KS4) school performance** in England. GCSE outcomes are measured via **Attainment 8** (average grade across 8 subjects) and **Progress 8** (value-added). 
+This project analyzes the relationship between regional deprivation—using the **2019 Indices of Multiple Deprivation (IMD)**—and **Key Stage 4 (KS4) school performance** in England.
 
-We address five core research questions:
-1. **Performance over time:** Variations in the attainment gap between most and least deprived Local Authorities (LAs) from 2019 to 2025.
-2. **Specific factors:** Which IMD sub-domains correlate strongest with poor performance.
-3. **Subject resilience:** Deprivation effects on core EBacc subjects (Maths, Science) vs. Humanities/Languages.
-4. **Gender gap:** How the boys/girls attainment gap changes with regional deprivation.
-5. **Language background:** EAL vs. English-first performance across deprivation levels.
+We address the following research questions:
+1. How does overall school performance vary between the most and least deprived Local Authorities, and has this attainment gap widened or narrowed between 2019 and 2025?
+2. Which specific sub-domain of deprivation has the strongest negative correlation with a region's educational outcomes?
+3. Are there certain core EBacc subjects (e.g., Maths, Science, Humanities, Languages) that are more resilient to the effects of deprivation compared to others?
+4. How does the performance gap between boys and girls change across different deprivation levels?
+5. How does the performance of pupils with English as an Additional Language (EAL) compare to first-language English speakers across different deprivation levels?
+6. Can You Predict a School's Progress 8 Band from Non-Academic Data Alone?
 
 *Target Audience:* DfE policymakers (for Pupil Premium allocation), educational charities/NGOs, and school leaders.
 
@@ -38,20 +39,24 @@ We address five core research questions:
 
 ### Q1
 
-{{ ... }}
+### Q2
 
 ### Q3
 
 ### Q4: The Gender Gap and Deprivation
-Girls outperform boys in Attainment 8. Excluding COVID years, deprivation significantly widens this gap:
-* **Correlation & ANOVA:** Deprivation weakly but significantly correlates with a wider gender gap ($r = +0.1339, p = 0.0002$; ANOVA $F = 4.4526, p = 0.00146$).
-* **Impact:** The gap widens from **4.35 points** in Q1 (least deprived) to **4.86 points** in Q5 (most deprived; $p = 0.00041$). Boys' scores decline faster than girls' (-5.63% vs -4.33% from Q1 to Q3).
+* **Correlation & ANOVA:** Deprivation weakly but significantly correlates with a wider gender gap, explaining around 1.8% of the variation in that gap.
+* **Impact:** The attainment gap widens with deprivation, particularly between Q4 and Q5. Compared with the least deprived group, Attainment 8 scores are 14.41% lower for boys and 12.21% lower for girls in the most deprived group, with boys experiencing a slightly greater decline overall.
 
 <p align="center">
-  <img src="pictures/gender_gap_scatter.png" width="300" alt="IMD vs Gender Gap" />
-  <img src="pictures/gender_gap_pct_change.png" width="300" alt="Percent Change from Q1" />
-  <br>
-  <em>Figure 3.1: Scatter plot of IMD Score vs. gender gap (left) and % change in Attainment 8 from Q1 by quintile (right).</em>
+  <img src="pictures/gender_gap_scatter.png" width="600" alt="IMD vs Gender Gap" />
+</p>
+
+<p align="center">
+  <img src="pictures/gender_gap_pct_change.png" width="350" alt="Percent Change from Q1" />
+</p>
+
+<p align="center">
+  <em>Figure 3.1: Scatter plot of IMD Score vs. gender gap (top) and % change in Attainment 8 from Q1 by quintile (bottom).</em>
 </p>
 
 ### Q5
