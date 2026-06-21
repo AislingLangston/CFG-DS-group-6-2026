@@ -38,19 +38,21 @@ We address five core research questions:
 
 ### Q1
 
-### Q2
+{{ ... }}
 
 ### Q3
 
 ### Q4: The Gender Gap and Deprivation
-Girls consistently outperform boys in Attainment 8. Excluding COVID years, higher deprivation significantly widens this gap:
-* **Correlation:** A weak but highly significant positive correlation exists between IMD score and gender gap ($r = +0.1339, p = 0.0002$).
-* **ANOVA:** Gender gap differences across deprivation quintiles are statistically significant ($F = 4.4526, p = 0.00146$).
-* **Post-hoc T-tests:** The gender gap in the least deprived quintile (Q1: 4.35 points) is significantly narrower than in the most deprived quintile (Q5: 4.86 points; $p = 0.00041$).
-* **Insight:** Deprivation penalises boys faster than girls; from Q1 to Q3 (median deprivation), boys' scores drop by -5.63% compared to -4.33% for girls.
+Girls outperform boys in Attainment 8. Excluding COVID years, deprivation significantly widens this gap:
+* **Correlation & ANOVA:** Deprivation weakly but significantly correlates with a wider gender gap ($r = +0.1339, p = 0.0002$; ANOVA $F = 4.4526, p = 0.00146$).
+* **Impact:** The gap widens from **4.35 points** in Q1 (least deprived) to **4.86 points** in Q5 (most deprived; $p = 0.00041$). Boys' scores decline faster than girls' (-5.63% vs -4.33% from Q1 to Q3).
 
-![IMD Score vs. Gender Gap in Attainment 8](pictures/gender_gap_scatter.png)
-*Figure 3.1: Scatter plot showing positive correlation between IMD Score and gender gap (Girls - Boys Attainment 8) with fitted linear regression.*
+<p align="center">
+  <img src="pictures/gender_gap_scatter.png" width="300" alt="IMD vs Gender Gap" />
+  <img src="pictures/gender_gap_pct_change.png" width="300" alt="Percent Change from Q1" />
+  <br>
+  <em>Figure 3.1: Scatter plot of IMD Score vs. gender gap (left) and % change in Attainment 8 from Q1 by quintile (right).</em>
+</p>
 
 ### Q5
 
