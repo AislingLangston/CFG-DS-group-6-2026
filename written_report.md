@@ -77,8 +77,7 @@ Although both groups experienced fluctuations over time, the performance gap rem
 * The gap narrowed slightly after 2022 but remained larger than in 2019.
 * Deprivation remains strongly associated with lower educational attainment.
 
-<img width="706" height="373" alt="image" src="https://github.com/user-attachments/assets/78d9c26a-eee8-4427-8941-891da33c2a69" />
-<p align="center">
+<img width="842" height="469" alt="image" src="https://github.com/user-attachments/assets/b4a29075-2555-4fbb-9335-54c1e3660386" />
     <em>Figure 1.1: Average Attainment 8 scores for the 10 most deprived and 10 least deprived Local Authorities between 2019 and 2025.</em>
 </p>
 
