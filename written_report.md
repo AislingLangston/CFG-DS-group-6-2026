@@ -81,18 +81,6 @@ Although both groups experienced fluctuations over time, the performance gap rem
     <img src="pictures/q1_attainment_gap.png" width="600" alt="Attainment 8 Scores by Deprivation Group" />
 </p>
 
-<p align="center">
-    <em>Figure 1.1: Average Attainment 8 scores for the 10 most deprived and 10 least deprived Local Authorities between 2019 and 2025.</em>
-</p>
-
-<p align="center">
-    <img src="pictures/q1_attainment_gap.png" width="600" alt="Attainment 8 Scores by Deprivation Group" />
-</p>
-
-<p align="center">
-    <em>Figure 1.1: Average Attainment 8 scores for the 10 most deprived and 10 least deprived Local Authorities between 2019 and 2025.</em>
-</p>
-
 ### Q2
 
 ### Q3
