@@ -55,7 +55,43 @@ Question 6: Aisling
 
 ## 3. Results
 
-### Q1
+### Q1: Performance by Deprivation Level Over Time
+**Research Question:**  
+How does overall school performance vary between the most and least deprived Local Authorities, and has this attainment gap widened or narrowed between 2019 and 2025?
+
+**Methodology:**  
+Local Authorities were ranked using the 2019 Index of Multiple Deprivation (IMD) scores. The 10 most deprived and 10 least deprived Local Authorities were selected. Average Attainment 8 scores were calculated annually between 2019 and 2025 for each group. The difference between the two groups was used to measure the attainment gap over time.
+
+**Results:**  
+Educational attainment was consistently higher in the least deprived Local Authorities than in the most deprived Local Authorities throughout the study period.
+
+The least deprived areas achieved average Attainment 8 scores ranging from 51.08 to 55.57, while the most deprived areas achieved scores ranging from 40.92 to 46.28.
+
+The attainment gap increased from 8.88 points in 2019 to a peak of 10.28 points in 2022 before narrowing slightly to 9.50 points in 2025.
+
+Although both groups experienced fluctuations over time, the performance gap remained substantial across all years, suggesting a persistent relationship between deprivation and educational outcomes.
+
+**Key Findings:**
+* Least deprived areas consistently outperformed most deprived areas.
+* The attainment gap widened between 2019 and 2022.
+* The gap narrowed slightly after 2022 but remained larger than in 2019.
+* Deprivation remains strongly associated with lower educational attainment.
+
+<p align="center">
+    <img src="pictures/q1_attainment_gap.png" width="600" alt="Attainment 8 Scores by Deprivation Group" />
+</p>
+
+<p align="center">
+    <em>Figure 1.1: Average Attainment 8 scores for the 10 most deprived and 10 least deprived Local Authorities between 2019 and 2025.</em>
+</p>
+
+<p align="center">
+    <img src="pictures/q1_attainment_gap.png" width="600" alt="Attainment 8 Scores by Deprivation Group" />
+</p>
+
+<p align="center">
+    <em>Figure 1.1: Average Attainment 8 scores for the 10 most deprived and 10 least deprived Local Authorities between 2019 and 2025.</em>
+</p>
 
 ### Q2
 
