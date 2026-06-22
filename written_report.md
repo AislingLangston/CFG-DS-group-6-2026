@@ -85,15 +85,16 @@ Nineteen LAs were classified as consistent overperformers and twenty as consiste
 
 Of the 19 outperforming LAs (full list is avaiable in the jupyter notebook), 14 are London boroughs. No London borough appears in the underperformer group. This is consistent with the well-documented "London Effect" — a pattern of sustained educational outperformance relative to deprivation documented in DfE research (see for example, Ross et al., 2020).
 
-The regression plot (Figure 6.1) illustrates this clearly. London boroughs, as shown in red achieve higher Attainment 8 scores than non-London LAs (in blue) at every comparable deprivation level. However, it is interesting to note that the slope is steeper for London LAs than for non-London LAs, suggesting that London's attainment advantage over non-London LAs at comparable deprivation levels is largest among less deprived boroughs and narrows as deprivation increases. Therefore, the London Effect is not uniform across the deprivation spectrum. However, the London LAs have a lower limit to their IMD score than non-London LAs (London IMD scores range from approximately 9 to 33, while the most deprived non-London LA), which means that this 
+The underperforming LA's show a more complex picture, as it includes both rural and costal LAs, likely with different drivers of inequality and barriers.
 
-It is also worth observing the residual distribution. The positive tail is notably longer than the negative tail (maximum +10.09, minimum -6.65), suggesting that the factors enabling some LAs to exceed deprivation predictions are more powerful in magnitude than the factors causing others to fall short. Further research in this area may be warranted.
+The regression plot (Figure 6.1) illustrates the overperformance of London clearly. London boroughs, as shown in red achieve higher Attainment 8 scores than non-London LAs (in blue) at every comparable deprivation level. However, it is interesting to note that the slope is steeper for London LAs than for non-London LAs, suggesting that London's attainment advantage over non-London LAs at comparable deprivation levels is largest among less deprived boroughs and narrows as deprivation increases. Therefore, the London Effect is not uniform across the deprivation spectrum. However, the London LAs have a lower limit to their IMD score than non-London LAs (London IMD scores range from approximately 9 to 33, while the most deprived non-London LA), which means that whether the advantage fully disappears at very high deprivation levels cannot be determined from this data.
+
+
 
 <p align="center">
   <em>Table 6.1: Outperformers (Top 5 by Mean Residual)</em>
 </p>
 
-<p align="center">
 | Rank | Local Authority | Mean Residual | London Borough |
 |---|---|---|---|
 | 1 | Sutton | +10.09 | Yes |
@@ -101,7 +102,7 @@ It is also worth observing the residual distribution. The positive tail is notab
 | 3 | Kingston upon Thames | +8.54 | Yes |
 | 4 | Hammersmith and Fulham | +8.47 | Yes |
 | 5 | Barnet | +8.41 | Yes |
-</p>
+
 
 
 
@@ -109,7 +110,7 @@ It is also worth observing the residual distribution. The positive tail is notab
   <em>Table 6.2: Underperformers (Bottom 5 by Mean Residual)</em>
 </p>
 
-<p align="center">
+
 | Rank | Local Authority | Mean Residual |
 |---|---|---|
 | 1 | Knowsley | -6.65 |
@@ -117,19 +118,41 @@ It is also worth observing the residual distribution. The positive tail is notab
 | 3 | Portsmouth | -5.36 |
 | 4 | South Gloucestershire | -5.30 |
 | 5 | Isle of Wight | -4.85 |
-<p>
+
 
 <p align="center">
-  <img src="pictures/london_vs_non-london_dep_vs_attainment.png" width="350" alt="Percent Change from Q1" />
+  <img src="pictures/london_vs_non-london_dep_vs_attainment.png" width="600" alt="Percent Change from Q1" />
 </p>
 
 <p align="center">
   <em>Figure 6.1: Scatter plot of IMD Score vs. residuals for Attainment 8, separated into London and non-London LAs.</em>
 </p>
 
+Year-by-year residual analysis confirms that over- and underperformance is likely to be structural, as nearly all flagged LAs maintain their residual sign across all five examined years. This is evident in Figure 6.2, which illustrates London LAs as consistently and signficantly above non-London LAs over the duration of our dataset.
+
+However, while positions of LA's may be relatively stable, indicating structural consistency, the residuals show some trends over time, which can be seen when we examine overperformers and underperformers specifically. Comparing 2018/19 against 2024/25 residuals for overperformers, a widening trend is shown by several London LAs. Richmond upon Thames (+3.15), Southwark (+3.02), Kingston upon Thames (+2.92), and Newham (+2.76) show the largest increases. Trafford is the only non-London LA in the top five widening outperformers (+2.36). On the other hand, the worsening trend is concentrated among rural and coastal authorities: Shropshire (-3.17), Dorset (-2.64), East Sussex (-1.70), and Suffolk (-1.58) all show declining residuals between 2018/19 to 2024/25. This divergence suggests the structural gap between over achieving London LAs and underperforming non-London LAs may be widening.
+
+<p align="center">
+  <img src="pictures/London_vs_non-London_trend_over_time.png" width="600" alt="Percent Change from Q1" />
+</p>
+
+<p align="center">
+  <em>Figure 6.2: Spaghetti plot showing residual trends over time with London LAs in red and non-London LAs in blue.</em>
+</p>
+
+Comparison of deprivation sub-domain profiles between over- and under-performing LAs reveals that none of the six sub-domains examined (income, employment, health, crime, barriers to housing, and living environment) shows a clear increasing or decreasing relationship with performance group once London membership is controlled for. Interestingly, overperformers show higher barriers and living environment scores than underperformers, but this is likely to reflect urban density characteristics of London boroughs rather than any direct educational mechanism. Similarly, the apparent crime deprivation difference between groups does not survive grouping by London membership.
+
 ---
 
 ## 4. Conclusion & Recommendations
+
+
+
+### Recommendations
+
+- Target Pupil Premium allocation toward consistently underperforming rural and coastal LAs, where the gap between deprivation-predicted and actual attainment is large and in many cases worsening.
+- Investigate the London Effect mechanisms, in particular what structural, cultural, or policy factors sustain and accelerate London's advantage, to assess whether these can be replicated in other LAs. Trafford's consistent outperformance as the only non-London LA matching London-level residuals merits specific case study attention.
+- Monitor boundary-reorganised authorities (e.g. Cumberland, North Northamptonshire) for an additional year or two in order to assess these newly defined LAs specifically.
 
 ### Summary
 
