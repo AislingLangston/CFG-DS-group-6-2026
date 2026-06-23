@@ -11,3 +11,6 @@ data/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+
+# macOS folder
+.DS_Store
