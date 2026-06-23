@@ -56,6 +56,7 @@ Question 6: Aisling
 ## 3. Results
 
 ### Q1: Performance by Deprivation Level Over Time
+
 **Research Question:**  
 How does overall school performance vary between the most and least deprived Local Authorities, and has this attainment gap widened or narrowed between 2019 and 2025?
 
@@ -84,6 +85,51 @@ Although both groups experienced fluctuations over time, the performance gap rem
 ### Q2
 
 ### Q3
+### Q3: Subject-Specific Resilience to Deprivation
+
+For Q3, we examined whether some EBacc subjects are less affected by deprivation than others. Subject-specific APS scores were analysed for English, Maths, Science, Humanities and Languages. Two deprivation measures were used: average IMD score and the percentage of highly deprived neighbourhoods within each Local Authority.
+
+Table 3.1: Correlation between deprivation and subject attainment
+
+Subject	| Corr(IMD)	| Corr(% Highly Deprived)
+--------|-----------|--------------------------
+English	| -0.520325	| -0.525137
+Maths	| -0.614029	| -0.613521
+Science |	-0.600584	| -0.599225
+Humanities |	-0.59566 |	-0.586752
+Languages	| -0.310951	| -0.35924
+
+All subjects show a negative relationship between deprivation and attainment. Maths, Science and Humanities display the strongest correlations with deprivation, while Languages show the weakest relationship. Similar patterns are observed using both deprivation measures, suggesting that the findings are robust.
+
+Local Authorities were also grouped into deprivation deciles to compare attainment across the deprivation spectrum and calculate attainment gaps between the least and most deprived authorities.
+
+Table 3.2: Average APS scores across deprivation deciles
+Deciles | English	| Maths |	Science	| Humanities|	Languages
+--|-------|----------|--------|-----------|---------
+Least deprived	| 5.33	| 5.05	| 5	| 4.34	| 2.62
+Most deprived	| 4.6	| 4.15 |	4.09	| 3.29	| 1.87
+Gap	| 0.73 |	0.9	| 0.91 |	1.05 |	0.75
+
+Average attainment declines steadily as deprivation increases across all subjects. The largest attainment gap is observed in Humanities (1.05 APS points), followed by Science (0.91) and Maths (0.89). English (0.73) and Languages (0.75) show the smallest gaps, suggesting that these subjects are relatively more resilient to deprivation.
+
+Finally, subject participation rates were analysed to investigate whether deprivation influences subject entry patterns.
+
+Table 3.3: Subject participation rates across deprivation deciles
+Deciles	|Eng entering %|	Math entering %	|Sci entering %	|Hum entering %	|Lang entering %
+----|----|----|-----|----|-----
+Least deprived	|95.55	|97.28	|95.55	|82.96	|48.61
+Most deprived	|93.51|	95.85|	93.48|	77.85|	38.65
+Gap	|2.04	|1.43|	2.07|	5.11|	9.96
+
+
+
+Entry rates for English, Maths and Science remain consistently high across deprivation groups. Humanities participation declines moderately, while Languages show the largest reduction in participation, falling from 48.6% in the least deprived authorities to 38.7% in the most deprived authorities. This indicates that pupils in more deprived areas are substantially less likely to study a language qualification.
+
+**Conclusion**
+
+Deprivation is associated with lower attainment across all EBacc subjects. However, the strength of this relationship varies between subjects. English and Languages appear to be the most resilient subjects, showing the smallest attainment gaps across deprivation levels, while Humanities show the strongest association with deprivation.
+
+An interesting pattern emerges for Languages. Although language attainment appears relatively resilient to deprivation, participation decreases substantially in more deprived authorities. This suggests that the pupils taking language qualifications in more deprived areas may represent a more selective group, although further investigation would be required to confirm this explanation.
 
 ### Q4: The Gender Gap and Deprivation
 * **Correlation & ANOVA:** Deprivation weakly but significantly correlates with a wider gender gap, explaining around 1.8% of the variation in that gap.
