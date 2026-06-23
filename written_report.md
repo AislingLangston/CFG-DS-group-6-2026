@@ -76,7 +76,30 @@ Although both groups experienced fluctuations over time, the performance gap rem
 </p>
 
 ### Q2
+**Research Question**  
+Among the different sub-domains of deprivation, which specific factor (if any) has the strongest negative correlation with a region's educational outcomes?
 
+**Methods**  
+To answer this research question, correlations were calculated for seven different measures of deprivation against average attainment 8 scores. Correlations were examined both overall and split by academic year and results were visualised where appropriate and helpful. Examing the correlations provided a direct way to answer this question by measuring both the direction (positive/negative) and strength of the relationship between each deprivation factor and attainment 8 averages.
+
+**Results**  
+This analysis showed each deprivation factor had consisent correlations with attainment 8 average accross all of the educational years analysed. Health deprivation showed the strongest negative correlation (r = -0.622). Employment and income related (income_score, idaci_score) deprivation measures also showed moderate-strong negative correlations. Crime deprivation exhibited a weaker negative correlation (r = -0.274) and living environment deprivation showed almost no correlation. In contrast to the other deprivation factors, barriers to housing and social services had a weak-moderate positive correlation with attainment 8 average (r = +0.350, Table 2.1).
+
+Table 2.1. Overall correlation between deprivation factors and attainment 8 averages.
+
+| Deprivation Factor | Correlation |
+|-------------------|------------:|
+| Health            | -0.622 |
+| Employment        | -0.583 |
+| IDACI             | -0.494 |
+| Income            | -0.489 |
+| Crime             | -0.274 |
+| Living Environment| -0.000 |
+| Barriers          | 0.350 |
+
+**Conclusions**
+Among the sub-domains of deprivation, health related deprivation has the strongest negative correlation with educational outcomes. Most other sub-domains of deprivation also had negative correlations with educational attainment, with the exceptions of living environment related deprivation which has effectively no correlation and deprivation linked to barriers to housing which showed a weak positive correlation.
+Future research should both investigate how the impactt of deprivation varies at smaller spatial scales to reveal potential urban/rural differences and investigate why barriers to housing/social services exhibits a positive relattionship with educational attainment. 
 
 ### Q3: Subject-Specific Resilience to Deprivation
 
