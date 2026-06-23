@@ -29,14 +29,7 @@ We address the following research questions:
 * **Aggregation:** LSOA-level IMD scores were aggregated to Upper-tier Local Authority (UTLA) level using population-weighted averages.
 * **Data Cleansing:** Reconciled boundary shifts (e.g., Cumbria, Northamptonshire), converted DfE suppression flags ('c', 'z') to `NaN`, and excluded COVID-affected years (2019/20 and 2020/21) due to teacher-assessment grade inflation.
 
-
-#### Question 6 Methodology
-
-To identify Local Authorities that perform differently from what would be expected from their deprivation level, a linear regression model was fitted between IMD score and Attainment 8 average for each examined year separately. The residual, that is, the difference between each LA's actual and predicted Attainment 8 score, was used as the measure of over- or underperformance. A positive residual indicates an LA achieving better than its deprivation level predicts, while a negative residual indicates underperformance.
-
-Mean residuals were calculated for each LA across all five examined years to identify consistent rather than incidental over- or underperformance. LAs whose mean residual fell more than one standard deviation above or below the mean were classified as Overperformers or Underperformers respectively.
-
-Given the identification of over-perfomers as dominated by London LAs, Local Authorities were classified as London or non-London using ONS borough boundaries. Separate linear regression lines were fitted for each group to compare the deprivation-attainment relationship between them. Year-by-year residuals were examined for all flagged LAs to assess consistency of over- and underperformance across the five examined years, and a trend measure was calculated by comparing each LA's 2024/25 residual against its 2018/19 residual. Deprivation sub-domain profiles were compared across performance groups using mean scores and box plots, and stratified by London membership to test whether any sub-domain effect was independent of geography.
+Per-year linear regressions of Attainment 8 against IMD score were used to calculate residuals for each Local Authority, with LAs whose mean residual across all examined years fell more than one standard deviation from the mean classified as consistent Outperformers or Underperformers. Geographic and sub-domain analyses were then conducted to investigate whether performance group membership was associated with London borough status or any specific deprivation dimension. 
 
 ### Implementation & Tools
 * **Team Roles:** 
@@ -55,11 +48,81 @@ Question 6: Aisling
 
 ## 3. Results
 
-### Q1
+### Q1: Performance by Deprivation Level Over Time
+
+**Research Question:**  
+How does overall school performance vary between the most and least deprived Local Authorities, and has this attainment gap widened or narrowed between 2019 and 2025?
+
+**Methodology:**  
+Local Authorities were ranked using the 2019 Index of Multiple Deprivation (IMD) scores. The 10 most deprived and 10 least deprived Local Authorities were selected. Average Attainment 8 scores were calculated annually between 2019 and 2025 for each group. The difference between the two groups was used to measure the attainment gap over time.
+
+**Results:**  
+Educational attainment was consistently higher in the least deprived Local Authorities than in the most deprived Local Authorities throughout the study period.
+
+The least deprived areas achieved average Attainment 8 scores ranging from 51.08 to 55.57, while the most deprived areas achieved scores ranging from 40.92 to 46.28.
+
+The attainment gap increased from 8.88 points in 2019 to a peak of 10.28 points in 2022 before narrowing slightly to 9.50 points in 2025.
+
+Although both groups experienced fluctuations over time, the performance gap remained substantial across all years, suggesting a persistent relationship between deprivation and educational outcomes.
+
+**Key Findings:**
+* Least deprived areas consistently outperformed most deprived areas.
+* The attainment gap widened between 2019 and 2022.
+* The gap narrowed slightly after 2022 but remained larger than in 2019.
+* Deprivation remains strongly associated with lower educational attainment.
+
+<img width="842" height="469" alt="image" src="https://github.com/user-attachments/assets/b4a29075-2555-4fbb-9335-54c1e3660386" />
+    <em>Figure 1.1: Average Attainment 8 scores for the 10 most deprived and 10 least deprived Local Authorities between 2019 and 2025.</em>
+</p>
 
 ### Q2
 
 ### Q3
+### Q3: Subject-Specific Resilience to Deprivation
+
+For Q3, we examined whether some EBacc subjects are less affected by deprivation than others. Subject-specific APS scores were analysed for English, Maths, Science, Humanities and Languages. Two deprivation measures were used: average IMD score and the percentage of highly deprived neighbourhoods within each Local Authority.
+
+Table 3.1: Correlation between deprivation and subject attainment
+
+Subject	| Corr(IMD)	| Corr(% Highly Deprived)
+--------|-----------|--------------------------
+English	| -0.520325	| -0.525137
+Maths	| -0.614029	| -0.613521
+Science |	-0.600584	| -0.599225
+Humanities |	-0.59566 |	-0.586752
+Languages	| -0.310951	| -0.35924
+
+All subjects show a negative relationship between deprivation and attainment. Maths, Science and Humanities display the strongest correlations with deprivation, while Languages show the weakest relationship. Similar patterns are observed using both deprivation measures, suggesting that the findings are robust.
+
+Local Authorities were also grouped into deprivation deciles to compare attainment across the deprivation spectrum and calculate attainment gaps between the least and most deprived authorities.
+
+Table 3.2: Average APS scores across deprivation deciles
+Deciles | English	| Maths |	Science	| Humanities|	Languages
+--|-------|----------|--------|-----------|---------
+Least deprived	| 5.33	| 5.05	| 5	| 4.34	| 2.62
+Most deprived	| 4.6	| 4.15 |	4.09	| 3.29	| 1.87
+Gap	| 0.73 |	0.9	| 0.91 |	1.05 |	0.75
+
+Average attainment declines steadily as deprivation increases across all subjects. The largest attainment gap is observed in Humanities (1.05 APS points), followed by Science (0.91) and Maths (0.89). English (0.73) and Languages (0.75) show the smallest gaps, suggesting that these subjects are relatively more resilient to deprivation.
+
+Finally, subject participation rates were analysed to investigate whether deprivation influences subject entry patterns.
+
+Table 3.3: Subject participation rates across deprivation deciles
+Deciles	|Eng entering %|	Math entering %	|Sci entering %	|Hum entering %	|Lang entering %
+----|----|----|-----|----|-----
+Least deprived	|95.55	|97.28	|95.55	|82.96	|48.61
+Most deprived	|93.51|	95.85|	93.48|	77.85|	38.65
+Gap	|2.04	|1.43|	2.07|	5.11|	9.96
+
+
+
+Entry rates for English, Maths and Science remain consistently high across deprivation groups. Humanities participation declines moderately, while Languages show the largest reduction in participation, falling from 48.6% in the least deprived authorities to 38.7% in the most deprived authorities. This indicates that pupils in more deprived areas are substantially less likely to study a language qualification.
+
+**Conclusion**
+
+Deprivation is associated with lower attainment across all EBacc subjects. However, the strength of this relationship varies between subjects. English and Languages appear to be the most resilient subjects, showing the smallest attainment gaps across deprivation levels, while Humanities show the strongest association with deprivation.
+
+An interesting pattern emerges for Languages. Although language attainment appears relatively resilient to deprivation, participation decreases substantially in more deprived authorities. This suggests that the pupils taking language qualifications in more deprived areas may represent a more selective group, although further investigation would be required to confirm this explanation.
 
 ### Q4: The Gender Gap and Deprivation
 * **Correlation & ANOVA:** Deprivation weakly but significantly correlates with a wider gender gap, explaining around 1.8% of the variation in that gap.
@@ -81,43 +144,9 @@ Question 6: Aisling
 
 ### Q6
 
-Nineteen LAs were classified as consistent overperformers and twenty as consistent underperformers across the five examined years. In Table 6.1, the top five overperfomers are listed, together with their mean residual, and identification as London or non-London borough. In Table 6.2, the underperformers are similarly reported. London LAs are over-represented in the top performers, while they are under-represented in underperformers.
+Nineteen LAs were classified as consistent overperformers and twenty as consistent underperformers across the five examined years. Of the 19 outperforming LAs (full list is avaiable in the jupyter notebook), 14 are London boroughs. No London borough appears in the underperformer group. This is consistent with the well-documented "London Effect", a pattern of sustained educational outperformance relative to deprivation documented in DfE research (see for example, Ross et al., 2020). The underperforming LA's show a more complex picture, as it includes both rural and costal LAs, likely with different drivers of inequality and barriers.
 
-Of the 19 outperforming LAs (full list is avaiable in the jupyter notebook), 14 are London boroughs. No London borough appears in the underperformer group. This is consistent with the well-documented "London Effect" — a pattern of sustained educational outperformance relative to deprivation documented in DfE research (see for example, Ross et al., 2020).
-
-The underperforming LA's show a more complex picture, as it includes both rural and costal LAs, likely with different drivers of inequality and barriers.
-
-The regression plot (Figure 6.1) illustrates the overperformance of London clearly. London boroughs, as shown in red achieve higher Attainment 8 scores than non-London LAs (in blue) at every comparable deprivation level. However, it is interesting to note that the slope is steeper for London LAs than for non-London LAs, suggesting that London's attainment advantage over non-London LAs at comparable deprivation levels is largest among less deprived boroughs and narrows as deprivation increases. Therefore, the London Effect is not uniform across the deprivation spectrum. However, the London LAs have a lower limit to their IMD score than non-London LAs (London IMD scores range from approximately 9 to 33, while the most deprived non-London LA), which means that whether the advantage fully disappears at very high deprivation levels cannot be determined from this data.
-
-
-
-<p align="center">
-  <em>Table 6.1: Outperformers (Top 5 by Mean Residual)</em>
-</p>
-
-| Rank | Local Authority | Mean Residual | London Borough |
-|---|---|---|---|
-| 1 | Sutton | +10.09 | Yes |
-| 2 | Trafford | +8.61 | No |
-| 3 | Kingston upon Thames | +8.54 | Yes |
-| 4 | Hammersmith and Fulham | +8.47 | Yes |
-| 5 | Barnet | +8.41 | Yes |
-
-
-
-
-<p align="center">
-  <em>Table 6.2: Underperformers (Bottom 5 by Mean Residual)</em>
-</p>
-
-
-| Rank | Local Authority | Mean Residual |
-|---|---|---|
-| 1 | Knowsley | -6.65 |
-| 2 | Central Bedfordshire | -5.73 |
-| 3 | Portsmouth | -5.36 |
-| 4 | South Gloucestershire | -5.30 |
-| 5 | Isle of Wight | -4.85 |
+Figure 6.1 shows London boroughs achieving higher Attainment 8 scores than non-London LAs at every comparable deprivation level. London's steeper regression slope (-0.40 vs -0.26) suggests this advantage narrows as deprivation increases, though London's IMD scores extend only to approximately 33, so whether the advantage disappears  at higher deprivation levels cannot be confirmed from this data.
 
 
 <p align="center">
@@ -125,12 +154,10 @@ The regression plot (Figure 6.1) illustrates the overperformance of London clear
 </p>
 
 <p align="center">
-  <em>Figure 6.1: Scatter plot of IMD Score vs. residuals for Attainment 8, separated into London and non-London LAs.</em>
+  <em>Figure 6.1: Scatter plot of IMD Score vs. Attainment 8 Average for London (red) and non-London (blue) LAs.</em>
 </p>
 
-Year-by-year residual analysis confirms that over- and underperformance is likely to be structural, as nearly all flagged LAs maintain their residual sign across all five examined years. This is evident in Figure 6.2, which illustrates London LAs as consistently and signficantly above non-London LAs over the duration of our dataset.
-
-However, while positions of LA's may be relatively stable, indicating structural consistency, the residuals show some trends over time, which can be seen when we examine overperformers and underperformers specifically. Comparing 2018/19 against 2024/25 residuals for overperformers, a widening trend is shown by several London LAs. Richmond upon Thames (+3.15), Southwark (+3.02), Kingston upon Thames (+2.92), and Newham (+2.76) show the largest increases. Trafford is the only non-London LA in the top five widening outperformers (+2.36). On the other hand, the worsening trend is concentrated among rural and coastal authorities: Shropshire (-3.17), Dorset (-2.64), East Sussex (-1.70), and Suffolk (-1.58) all show declining residuals between 2018/19 to 2024/25. This divergence suggests the structural gap between over achieving London LAs and underperforming non-London LAs may be widening.
+Figure 6.2 confirms that over- and underperformance is structurally consistent. In general, London LAs remain persistently positive while many non-London LAs are persistently negative across all five examined years. Within this, several London LAs show widening positive residuals between 2018/19 and 2024/25 (Richmond upon Thames +3.15, Southwark +3.02, Kingston upon Thames +2.92), while several rural and coastal underperformers show worsening residuals over the same period (Shropshire -3.17, Dorset -2.64, East Sussex -1.70). 
 
 <p align="center">
   <img src="pictures/London_vs_non-London_trend_over_time.png" width="600" alt="Percent Change from Q1" />
@@ -140,13 +167,13 @@ However, while positions of LA's may be relatively stable, indicating structural
   <em>Figure 6.2: Spaghetti plot showing residual trends over time with London LAs in red and non-London LAs in blue.</em>
 </p>
 
-Comparison of deprivation sub-domain profiles between over- and under-performing LAs reveals that none of the six sub-domains examined (income, employment, health, crime, barriers to housing, and living environment) shows a clear increasing or decreasing relationship with performance group once London membership is controlled for. Interestingly, overperformers show higher barriers and living environment scores than underperformers, but this is likely to reflect urban density characteristics of London boroughs rather than any direct educational mechanism. Similarly, the apparent crime deprivation difference between groups does not survive grouping by London membership.
+No deprivation sub-domain shows a clear relationship with performance group once London membership is controlled for, suggesting the drivers of the London Effect are structural rather than reducible to any single IMD dimension.
 
 ---
 
 ## 4. Conclusion & Recommendations
 
-
+Local Authorities consistently over- or underperform their deprivation-predicted Attainment 8 scores, with outperformance dominated by London LAs and underperformance concentrated among rural and coastal authorities. This geographical separation remained stable across all five examined years. No individual deprivation sub-domain independently explains this pattern once London membership is controlled for, suggesting the drivers of the "London Effect" lie outside the measurements given by the IMD framework and warrant further investigation at school and institutional level.
 
 ### Recommendations
 
