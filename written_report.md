@@ -77,7 +77,7 @@ Although both groups experienced fluctuations over time, the performance gap rem
 
 ### Q2
 
-### Q3
+
 ### Q3: Subject-Specific Resilience to Deprivation
 
 For Q3, we examined whether some EBacc subjects are less affected by deprivation than others. Subject-specific APS scores were analysed for English, Maths, Science, Humanities and Languages. Two deprivation measures were used: average IMD score and the percentage of highly deprived neighbourhoods within each Local Authority.
@@ -140,7 +140,30 @@ An interesting pattern emerges for Languages. Although language attainment appea
   <em>Figure 3.1: Scatter plot of IMD Score vs. gender gap (top) and % change in Attainment 8 from Q1 by quintile (bottom).</em>
 </p>
 
-### Q5
+### Q5: Deprivation and Achievement: EAL vs First-Language English Pupils
+
+**Correlation:** Linear regression analysis found a negative relationship between deprivation (IMD and IDACI scores) and attainment, showing that higher deprivation is associated with lower educational achievement.
+
+**Findings:** Although attainment declined with increasing deprivation for all pupils, EAL pupils consistently achieved similar or slightly higher outcomes than first-language English speakers, suggesting that socio-economic deprivation has a greater impact on attainment than language background.
+
+
+<p align= "center">   
+  <img src="Attainment_by_language_background.png" width="600" alt="attainment and lang" />
+</p>  
+
+<p align="center">
+  <em>Figure 5.1: Linegraph for mean attainment across EAL and English speakers</em>
+</p>
+
+
+<p align= "center">   
+  <img src="IMD_score_vs_Attainment.png" width="600" alt="attainment and IMD score" />
+</p>
+
+
+<p align="center">
+  <em>Figure 5.2: Relationship between Dprivation and Attainment using IMD score </em>
+</p>
 
 ### Q6
 
