@@ -148,7 +148,7 @@ An interesting pattern emerges for Languages. Although language attainment appea
 
 
 <p align= "center">   
-  <img src="Attainment_by_language_background.png" width="600" alt="attainment and lang" />
+  <img src="pictures/Attainment_by_language_background.png" width="600" alt="attainment and lang" />
 </p>  
 
 <p align="center">
@@ -157,7 +157,7 @@ An interesting pattern emerges for Languages. Although language attainment appea
 
 
 <p align= "center">   
-  <img src="IMD_score_vs_Attainment.png" width="600" alt="attainment and IMD score" />
+  <img src="pictures/IMD_score_vs_Attainment.png" width="600" alt="attainment and IMD score" />
 </p>
 
 
