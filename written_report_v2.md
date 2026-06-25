@@ -101,6 +101,7 @@ Each deprivation factor had consisent correlations with attainment 8 across year
 
 **Q3 - Subject-specific resilience**  
 All five subjects showed negative relationship between deprivation and attainment. Maths, Science and Humanities show the strongest correlations with deprivation, while Languages shows the weakest relationship. Similar patterns are observed using both deprivation measures, suggesting findings are robust (Table 3.1).
+<div style="font-size: 9pt;">
 
 **Table 3.1:** Correlation between deprivation and subject attainment
 
@@ -112,17 +113,31 @@ Sci | -0.60 | -0.60
 Hum | -0.60 | -0.59
 Lang | -0.31 | -0.36
 
-Local Authorities were grouped into deprivation deciles to compare attainment across the deprivation spectrum and calculate attainment gaps between the least and most deprived authorities. Average attainment declines steadily as deprivation increases across all subjects. The largest attainment gap is observed in Humanities (1.05 APS points), followed by Science (0.91) and Maths (0.89). English (0.73) and Languages (0.75) show the smallest gaps, suggesting that these subjects are relatively more resilient to deprivation.
+</div>
+Local Authorities were grouped into deprivation deciles to compare attainment across the deprivation spectrum and calculate attainment gaps between the least and most deprived authorities. Average attainment declines steadily as deprivation increases across all subjects. Humanities show the largest attainment gap (1.05 APS points), followed by Science (0.91) and Maths (0.89). English (0.73) and Languages (0.75) show the smallest gaps, suggesting greater resilience to deprivation (Table 3.2). 
+<div style="font-size: 9pt;">
 
-Finally, subject participation rates were analysed to investigate whether deprivation influences subject entry patterns. Entry rates for English, Maths and Science remain consistently high across deprivation groups. Humanities participation declines moderately. Languages show the largest reduction in participation, from 48.6% in the least deprived authorities to 38.7% in the most deprived authorities (Table 3.2).
+**Table 3.2:** Average APS scores across deprivation deciles
+Deciles | English	| Maths |	Science	| Humanities|	Languages
+--|-------|----------|--------|-----------|---------
+Least deprived	| 5.33	| 5.05	| 5	| 4.34	| 2.62
+Most deprived	| 4.6	| 4.15 |	4.09	| 3.29	| 1.87
+Gap	| 0.73 |	0.9	| 0.91 |	1.05 |	0.75
 
-**Table 3.2:** Subject participation rates across deprivation deciles  
+</div>
+
+Finally, subject participation rates were analysed to investigate whether deprivation influences subject entry patterns. Entry rates for English, Maths and Science remain consistently high across deprivation groups, while Humanities decline moderately. Languages show the largest reduction, falling from 48.6% in the least deprived authorities to 38.7% in the most deprived authorities (Table 3.3).
+<div style="font-size: 9pt;">
+
+**Table 3.3:** Subject participation rates across deprivation deciles  
 
 Deciles | Eng % | Maths % | Sci % | Hum % | Lang %  
 --------|------:|--------:|------:|------:|------:  
 Least deprived | 95.55 | 97.28 | 95.55 | 82.96 | 48.61  
 Most deprived  | 93.51 | 95.85 | 93.48 | 77.85 | 38.65  
 Gap            | 2.04  | 1.43  | 2.07  | 5.11  | 9.96  S
+
+</div>
 
 **Q4 - The gender gap and deprivation**  
 ***Correlation & ANOVA:*** Deprivation weakly but significantly correlates with a wider gender gap, explaining around 1.8% of the variation in that gap.  
