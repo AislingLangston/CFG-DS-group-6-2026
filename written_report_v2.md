@@ -33,7 +33,7 @@ This project aims to examine the relationship between regional deprivation and K
 Educational outcomes in England vary by socio-economic context. This study uses quantitative analysis to examine how deprivation relates to attainment across regions and over time. Understanding the relationship between deprivation and educational attainment is key to identifying educational inequality and informing targeted policy.  
 **Target audience:** DfE policymakers, educational charities/NGOs, and school leaders.
 
----
+<div style="page-break-after: always;"></div>
 
 ### Methodology and Design
 **Data sourcing and preprocessing**  
@@ -69,7 +69,7 @@ Version control was managed using Git/GitHub to assist with collaboration and re
 **Key achievement and challenges faced**  
 Each member faced different challenges throughout the project. Our varying levels of confidence with GitHub and different analytical approaches meant that ongoing peer support was needed. Every challenge contributed to skill development and led to each member becoming more confident overall. Our key achievement was successfully delivering meaningful research despite initial differences in experience and confidence levels.
 
----
+<div style="page-break-after: always;"></div>
 
 ### Results
 **Q1 - Performance by deprivation level over time**  
@@ -98,6 +98,7 @@ Each deprivation factor had consisent correlations with attainment 8 across year
 | Crime             | -0.274 |
 | Living Environment| -0.000 |
 | Barriers          | 0.350 |
+<div style="page-break-after: always;"></div>
 
 **Q3 - Subject-specific resilience**  
 All five subjects showed negative relationship between deprivation and attainment. Maths, Science and Humanities show the strongest correlations with deprivation, while Languages shows the weakest relationship. Similar patterns are observed using both deprivation measures, suggesting findings are robust (Table 3.1).
@@ -177,6 +178,7 @@ Gap            | 2.04  | 1.43  | 2.07  | 5.11  | 9.96  S
 <p align="center">
   <em>Figure 5.2: Relationship between Deprivation and Attainment using IMD score </em>
 </p>
+<div style="page-break-after: always;"></div>
 
 **Q6 - Geographic patterns of over and underperformance**  
 19 LAs were classified as overperformers and 20 as underperformers. Of the overperforming LAs, 14 are London boroughs (73.7%). No underperformers are London boroughs. This is consistent with the "London Effect", a pattern of sustained educational outperformance relative to deprivation documented in DfE research (see, Ross et al., 2020). Underperforming LAs show a more complex picture. They include both rural and costal LAs, likely with different drivers of inequality and barriers.
@@ -202,7 +204,7 @@ Figure 6.2 confirms that over- and underperformance is consistent. London LAs ar
   <em>Figure 6.2: Spaghetti plot showing residual trends over time with London LAs in red and non-London LAs in blue.</em>
 </p>
 
----
+<div style="page-break-after: always;"></div>
 
 ### Conclusion
 **Summary of insights**   
