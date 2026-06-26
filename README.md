@@ -26,12 +26,12 @@ Machine Learning Questions:
 1. **DfE Key Stage 4 Performance Data**
    * **Source:** Department for Education (DfE) - Explore Education Statistics (https://explore-education-statistics.service.gov.uk/data-catalogue/data-set/9e761bdf-fe02-4e1e-9d3d-b32dac9fa6ef)
    * **Scope:** 2009/10 to 2024/25 academic years.
-   * **Key Metrics:**
+   * **Key Metrics:** Academic year (time_period), Local Authority code (new_la_code), Local Authority name (la_name), pupil count (pupil_count), demographic grouping (breakdown_topic), Attainment 8 average, Attainment 8 English, Attainment 8 Mathematics, Attainment 8 EBacc, EBacc Average Point Score (APS), EBacc English APS, EBacc Mathematics APS, EBacc Science APS, EBacc Humanities APS, EBacc Languages APS, sex, disadvantage status, free school meal (FSM) status, and first language.
    
 2. **English Indices of Deprivation 2019 (IMD)**
    * **Source:** Ministry of Housing, Communities & Local Government (MHCLG) (https://www.gov.uk/csv-preview/5dc407b440f0b6379a7acc8d/File_7_-_All_IoD2019_Scores__Ranks__Deciles_and_Population_Denominators_3.csv)
    * **Scope:** Lower-layer Super Output Areas (LSOAs) aggregated to Local Authority District (LAD) level.
-   * **Key Metrics:**
+   * **Key Metrics:** Local Authority District code and name, Index of Multiple Deprivation (IMD) Score, Income Score, Employment Score, Education, Skills and Training Score, Health Deprivation and Disability Score, Crime Score, Barriers to Housing and Services Score, Living Environment Score, Income Deprivation Affecting Children Index (IDACI) Score, Children and Young People Sub-domain Score, and total population (mid-2015).
 
 ## Setup & Installation
 
