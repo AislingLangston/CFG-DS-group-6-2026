@@ -1,4 +1,4 @@
-# CFG-DS-group-6-2026: Deprivation and School Performance in England (2019–2025)
+# Deprivation and School Performance in England (2019–2025)
 
 
 ## Project Overview
